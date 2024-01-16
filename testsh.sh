@@ -19,7 +19,7 @@ fi
 echo -e "\nDownloading pre-commit"
 if ! curl -o  pre-commit --fail "https://raw.githubusercontent.com/gs-skbandaru/test/main/pre-commit"; then
     echo "Error: Failed to download pre-commit script"
-    echo "  Please Check if you have access to 'https://github.com/ksripraveena/Test_Gitleaks/blob/main/Testsfile'"
+    echo "  Please Check if you have access to 'https://raw.githubusercontent.com/ksripraveena/Test_Gitleaks/main/Testsfile'"
     echo -e "  Git Hooks Set Up Failed \n"
     exit 1
 fi
