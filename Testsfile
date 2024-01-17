@@ -23,6 +23,6 @@ done
 
 git clone https://github.com/ksripraveena/Test_Gitleaks.git /tmp/Test_Gitleaks
 git pull 
-gitleaks detect -v . --config tmp/Test_Gitleaks/gitleaks.toml
+gitleaks detect -v . --config /tmp/Test_Gitleaks/gitleaks.toml
 
 exit 0
