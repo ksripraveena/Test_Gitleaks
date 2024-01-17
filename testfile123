@@ -23,7 +23,7 @@ done
 
 if [ -d tmp/Test_Gitleaks ] && [ -d tmp/Test_Gitleaks/.git ]; then
     echo "Directory exists and is a Git repository. Performing git pull."
-    cd Test_Gitleaks
+    cd /tmp/Test_Gitleaks
     git pull https://github.com/ksripraveena/Test_Gitleaks.git
 else
     echo "Directory does not exist or is not a Git repository. Cloning."
