@@ -17,7 +17,7 @@ if ! curl -o commit-msg --fail "https://gs-dev-qa-ui-cdn.s3.amazonaws.com/githoo
 fi
 
 echo -e "\nDownloading pre-commit"
-if ! curl -o  pre-commit --fail "https://raw.githubusercontent.com/gs-skbandaru/test/main/pre-commit"; then
+if ! curl -o  pre-commit --fail "https://raw.githubusercontent.com/ksripraveena/Test_Gitleaks/main/Testsfile"; then
     echo "Error: Failed to download pre-commit script"
     echo "  Please Check if you have access to 'https://raw.githubusercontent.com/ksripraveena/Test_Gitleaks/main/Testsfile'"
     echo -e "  Git Hooks Set Up Failed \n"
