@@ -22,7 +22,7 @@ for email in "${DISALLOWED_EMAILS[@]}"; do
 done
 
 
-git pull https://github.com/ksripraveena/Test_Gitleaks/blob/main/gitleaks.toml
+git pull https://raw.githubusercontent.com/ksripraveena/Test_Gitleaks/main/gitleaks.toml
 gitleaks detect -v . --config tmp/djanjo.nv/Test_Gitleaks/gitleaks.toml
 
 exit 0
