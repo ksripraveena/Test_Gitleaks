@@ -27,7 +27,7 @@ if [ -d tmp/Test_Gitleaks ] && [ -d tmp/Test_Gitleaks/.git ]; then
     git pull https://github.com/ksripraveena/Test_Gitleaks.git
 else
     echo "Directory does not exist or is not a Git repository. Cloning."
-    git clone https://github.com/user/repo.git tmp/Test_Gitleaks
+    git clone https://github.com/ksripraveena/Test_Gitleaks.git tmp/Test_Gitleaks
 fi
 gitleaks detect -v . --config /tmp/Test_Gitleaks/gitleaks.toml
 
