@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Disallowed email domains and addresses
+DISALLOWED_EMAILS=("gmail.com" "yahoo.com" "outlook.com" "hotmail.com" "aol.com" "icloud.com" "noreply@github.com" "github.com")
+
+# Get the email of the commit author
+commit_author_email=$(git config user.email)
+
+# Validate commit author's email against disallowed emails
+for email in "${DISALLOWED_EMAILS[@]}"; do
+    if [[ $commit_author_email == *"$email"* ]]; then
+        echo ""
+        echo "commit_author_email: $commit_author_email"
+        echo "Disallowed email or domain found in commit author's email: $email"
+        echo ""
+	echo "Please correct your committer email using the below commands"
+	echo ""
+	echo -e "Please run the below command to set the email globally:\n git config --global user.email <your-email>@<your-organisation>.com \n"
+	echo -e "If You want to set up committer email only for this repository, then please run the comand without --global flag: \n git config user.email <your-email>@<your-organisation>.com \n"
+        exit 1
+    fi
+done
+
+if [ -d tmp/Test_Gitleaks ] && [ -d tmp/Test_Gitleaks/.git" ]; then
+    echo "Directory exists and is a Git repository. Performing git pull."
+    cd Test_Gitleaks
+    git pull https://github.com/ksripraveena/Test_Gitleaks.git
+else
+    echo "Directory does not exist or is not a Git repository. Cloning."
+    git clone https://github.com/user/repo.git tmp/Test_Gitleaks
+fi
+gitleaks detect -v . --config /tmp/Test_Gitleaks/gitleaks.toml
+
+exit 0
