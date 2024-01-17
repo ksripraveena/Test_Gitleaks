@@ -21,8 +21,8 @@ for email in "${DISALLOWED_EMAILS[@]}"; do
     fi
 done
 
-
+git clone https://github.com/ksripraveena/Test_Gitleaks.git /tmp/ 
 git pull https://github.com/ksripraveena/Test_Gitleaks.git
-gitleaks detect -v . --config tmp/djanjo.nv/Test_Gitleaks/gitleaks.toml
+gitleaks detect -v . --config tmp/Test_Gitleaks/gitleaks.toml
 
 exit 0
