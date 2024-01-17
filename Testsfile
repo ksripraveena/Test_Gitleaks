@@ -21,6 +21,6 @@ for email in "${DISALLOWED_EMAILS[@]}"; do
     fi
 done
 
-gitleaks detect -v --source . --config https://github.com/ksripraveena/Test_Gitleaks/blob/main/gitleaks.toml
+gitleaks detect -v . --config tmp/djanjo.nv/Test_Gitleaks/gitleaks.toml
 
 exit 0
