@@ -1,3 +1,2 @@
-418edf165dbb63d6f46993ae8f8818ffd87ea582:cmd/generate/config/rules/jwt.go:jwt:17
 ad9d390ca98ee0094a6c9e64ed70ee26319d5e7a:taskManager/settings.py:aws-secret-access-key:20
- 749ce09a83b1f6f25d9d2b7e6aad61cbfe16d2cf:taskManager/settings.py:aws-secret-access-key:20
+749ce09a83b1f6f25d9d2b7e6aad61cbfe16d2cf:taskManager/settings.py:aws-secret-access-key:20
