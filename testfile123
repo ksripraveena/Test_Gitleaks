@@ -22,9 +22,10 @@ for email in "${DISALLOWED_EMAILS[@]}"; do
 done
 
 rm -rf /tmp/gitleaks.toml
+rm -rf /tmp/ignorefile.json
 curl -o /tmp/gitleaks.toml https://raw.githubusercontent.com/ksripraveena/Test_Gitleaks/main/gitleaks.toml
 curl -o /tmp/ignorefile.json https://raw.githubusercontent.com/ksripraveena/Test_Gitleaks/main/baselinenew.json
 
-gitleaks detect -v . --config /tmp/gitleaks.toml --baseline-path /tmp/ignorefile.json
+gitleaks detect --source . --baseline-path /tmp/ignorefile.json --config /tmp/gitleaks.toml  -v
 
 exit 0
