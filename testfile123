@@ -23,6 +23,8 @@ done
 
 rm -rf /tmp/gitleaks.toml
 curl -o /tmp/gitleaks.toml https://raw.githubusercontent.com/ksripraveena/Test_Gitleaks/main/gitleaks.toml
-gitleaks detect -v . --config /tmp/gitleaks.toml
+curl -o /tmp/ignorefile.json https://raw.githubusercontent.com/ksripraveena/Test_Gitleaks/main/baselinenew.json
+
+gitleaks detect -v . --config /tmp/gitleaks.toml --baseline-path /tmp/ignorefile.json
 
 exit 0
