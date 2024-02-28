@@ -1,3 +1,14 @@
+Finding:     AWS_SECRET_ACCESS_KEY='wJalrXUtnFEMI/K7MDENG/bPxRfiCY6mdZTt9XTd'
+Secret:      AWS_SECRET_ACCESS_KEY='wJalrXUtnFEMI/K7MDENG/bPxRfiCY6mdZTt9XTd'
+RuleID:      aws-secret-access-key
+Entropy:     5.046569
+File:        taskManager/settings.py
+Line:        20
+Commit:      ad9d390ca98ee0094a6c9e64ed70ee26319d5e7a
+Author:      Yuga
+Email:       yuga@practical-devsecops.com
+Date:        2023-01-20T14:48:45Z
+Fingerprint: ad9d390ca98ee0094a6c9e64ed70ee26319d5e7a:taskManager/settings.py:aws-secret-access-key:20
 Finding:     ...r--;break;case e.ui.keyCode.END:r=this.anchors.length-1;break;case e.ui.keyC...
 Secret:      r=this.anchors.length-1
 RuleID:      generic-api-key
