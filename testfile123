@@ -23,9 +23,13 @@ done
 
 rm -rf /tmp/gitleaks.toml
 curl -o /tmp/gitleaks.toml https://raw.githubusercontent.com/ksripraveena/Test_Gitleaks/main/gitleaks.toml
-echo "To mark the identified issue as False Positive, Please run the below command by adding the fingerprint value of the respective issue"
-echo "echo '<Fingerprint>' >> .gitleaksignore"
-printf “\e[1;31mTo mark the identified issue as False Positive, Please run the below command by adding the fingerprint value of the respective issue\e[0m\n”  
+
+printf "\n\e[1;31mTo mark any identified key as False Positive or business requirement, Please run the below command by adding the fingerprint value of the respective issue and please report this to security team to add to the exclusion list\e[0m\n" 
+
+printf "\n\e[1;31m Command : '<Fingerprint>' >> .gitleaksignore   \e[0m\n"
+
+printf "\n\e[1;31m Example : 749ce09a83b1f6f25d9d2b7e6aad61cbfe16d2cf:taskManager/settings.py:aws-access-token:19 >> .gitleaksignore   \e[0m\n\n"
+
 touch .gitleaksignore
 ls -lah
 gitleaks detect --source . --config /tmp/gitleaks.toml  -v
