@@ -9,7 +9,7 @@ Author:      myugan59
 Email:       yuga@practical-devsecops.com
 Date:        2020-10-14T15:54:36Z
 Fingerprint: 582bf19dd9d654d7afd23fd962f450f065abc4b2:taskManager/static/taskManager/js/jquery-ui-1.9.2.custom.min.js:generic-api-key:6
-Finding:     AWS_SECRET_ACCESS_KEY='wJalrXUtnFEMI/K7MDENG/bPxRfiCY6mdZTt9XTd'
+Finding:     AWS_SECRET_ACCESS_KEY='wJalrXUtnFEMI/K7MDENG/bPxRfiCY6mdZTt9XTd' 
 Secret:      AWS_SECRET_ACCESS_KEY='wJalrXUtnFEMI/K7MDENG/bPxRfiCY6mdZTt9XTd'
 RuleID:      aws-secret-access-key
 Entropy:     5.046569
