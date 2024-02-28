@@ -20,3 +20,14 @@ Author:      Yuga
 Email:       yuga@practical-devsecops.com
 Date:        2023-01-20T14:51:10Z
 Fingerprint: dafced1d6dd21c6b3d360f8b449016daa9b8051d:taskManager/settings.py:generic-api-key:22
+Finding:     ...r--;break;case e.ui.keyCode.END:r=this.anchors.length-1;break;case e.ui.keyC...
+Secret:      r=this.anchors.length-1
+RuleID:      generic-api-key
+Entropy:     3.882045
+File:        taskManager/static/taskManager/js/jquery-ui-1.9.2.custom.min.js
+Line:        6
+Commit:      582bf19dd9d654d7afd23fd962f450f065abc4b2
+Author:      myugan59
+Email:       yuga@practical-devsecops.com
+Date:        2020-10-14T15:54:36Z
+Fingerprint: 582bf19dd9d654d7afd23fd962f450f065abc4b2:taskManager/static/taskManager/js/jquery-ui-1.9.2.custom.min.js:generic-api-key:6
