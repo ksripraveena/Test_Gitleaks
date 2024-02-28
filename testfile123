@@ -23,7 +23,7 @@ done
 
 rm -rf /tmp/gitleaks.toml
 curl -o /tmp/gitleaks.toml https://raw.githubusercontent.com/ksripraveena/Test_Gitleaks/main/gitleaks.toml
-echo "Please add the fingerprint value of the false positive issue to the .gitleaksignore file"
+echo "Please add the fingerprint value of the false positive issue to the .gitleaksignore file xxxxxxxxx:taskManager/settings.py:aws-secret-access-key:20"
 touch .gitleaksignore
 ls -lah
 gitleaks detect --source . --config /tmp/gitleaks.toml  -v
