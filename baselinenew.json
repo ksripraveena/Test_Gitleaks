@@ -1,25 +1,3 @@
-Finding:     AWS_SECRET_ACCESS_KEY='wJalrXUtnFEMI/K7MDENG/bPxRfiCY6mdZTt9XTd'
-Secret:      AWS_SECRET_ACCESS_KEY='wJalrXUtnFEMI/K7MDENG/bPxRfiCY6mdZTt9XTd'
-RuleID:      aws-secret-access-key
-Entropy:     5.046569
-File:        taskManager/settings.py
-Line:        20
-Commit:      ad9d390ca98ee0094a6c9e64ed70ee26319d5e7a
-Author:      Yuga
-Email:       yuga@practical-devsecops.com
-Date:        2023-01-20T14:48:45Z
-Fingerprint: ad9d390ca98ee0094a6c9e64ed70ee26319d5e7a:taskManager/settings.py:aws-secret-access-key:20
-Finding:     SLACK_API_TOKEN='xoxp-4797898847-4799393255-4778181812-f140b6'
-Secret:      xoxp-4797898847-4799393255-4778181812-f140b6
-RuleID:      generic-api-key
-Entropy:     3.681276
-File:        taskManager/settings.py
-Line:        22
-Commit:      dafced1d6dd21c6b3d360f8b449016daa9b8051d
-Author:      Yuga
-Email:       yuga@practical-devsecops.com
-Date:        2023-01-20T14:51:10Z
-Fingerprint: dafced1d6dd21c6b3d360f8b449016daa9b8051d:taskManager/settings.py:generic-api-key:22
 Finding:     ...r--;break;case e.ui.keyCode.END:r=this.anchors.length-1;break;case e.ui.keyC...
 Secret:      r=this.anchors.length-1
 RuleID:      generic-api-key
