@@ -24,7 +24,7 @@ done
 rm -rf /tmp/gitleaks.toml
 curl -o /tmp/gitleaks.toml https://raw.githubusercontent.com/ksripraveena/Test_Gitleaks/main/gitleaks.toml
 echo "To mark the identified issue as False Positive, Please run the below command by adding the fingerprint value of the respective issue"
-echo "echo '<Fingerprint>' >> .gitleaksignore"  R=’\033[0;31m’
+echo "echo '<Fingerprint>' >> .gitleaksignore" '<span style=\"color: blue;\">&lt;Fingerprint&gt;</span>'
 touch .gitleaksignore
 ls -lah
 gitleaks detect --source . --config /tmp/gitleaks.toml  -v
